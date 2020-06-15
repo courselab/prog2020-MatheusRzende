@@ -27,10 +27,10 @@ int greatest (int a, int b, int c)
  int x;
  x = a;
  
- if (b>=m)
+ if (b>=x)
  x = b;
  
- if (c>=m)
+ if (c>=x)
  x = c;
  
  return x;
