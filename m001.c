@@ -24,16 +24,16 @@
 
 int greatest (int a, int b, int c)
 {
- int m;
- m = a;
+ int x;
+ x = a;
  
  if (b>=m)
- m = b;
+ x = b;
  
  if (c>=m)
- m = c;
+ x = c;
  
- return m;
+ return x;
 
 }
 
