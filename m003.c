@@ -25,11 +25,11 @@ int is_prime (int a)
 {
 int i;
 int x;
- 
-x = 0;
+
+x=0;
 for(i=1; i<a; i=i+1) 
 {
- if ((a%i)==1) 
+ if (a%i==0) 
  {
  x=x+1;
  }
