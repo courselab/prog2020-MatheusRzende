@@ -27,6 +27,73 @@
 
 void sort (int *a, int *b, int *c)
 {
+int x, y, z;
+ if  (*a>*b && *a>*c && *c>*b)
+ {
+  x = *b;
+  y = *c;
+  z = *a;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls", a, b, c);
+  }
+ 
+  if  (*a>*b && *a>*c && *b>*c)
+  {
+  x = *b;
+  y = *c;
+  z = *a;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls",  a, b ,c);
+  }
+ 
+  if  (*b>*a && *b>*c && *c>*a)
+  {
+  x = *a;
+  y = *c;
+  z = *b;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls", a, b ,c);
+  }
+ 
+  if  (*b>*a && *b>*c && *a>*c)
+  {
+  x = *c;
+  y = *a;
+  z = *b;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls", a, b ,c);
+  }
+ 
+  if  (*c>*a && *c>*b && *a>*b)
+  {
+  x = *b;
+  y = *a;
+  z = *c;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls", a, b ,c);
+  }
+ 
+  if  (*c>*a && *c>*b && *b>*a)
+  {
+  x = *a;
+  y = *b;
+  z = *c;
+  *a = x;
+  *b = y;
+  *c = z;
+  printf ("%ls %ls %ls", a, b ,c);
+  }
+
 }
 
 /* Do not edit this function. */
@@ -47,7 +114,7 @@ int main (int argc, char **argv)
   
   sort (&a, &b, &c);
 
-  printf ("%d %d %d\n", a, b, c);
+  printf ("%d %d %d", a, b ,c);
   
   return 0;
 }
