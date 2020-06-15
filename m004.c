@@ -30,15 +30,20 @@
 int decimal (char *b)
 {
 int i, n, value;
+int k;
+value = 0; k = 1;
+n = strlen (b);
 
-value = 0;
-for (i=n-1; i>=0 ; i--)
+for (i=n-1; i>=0 ; i--) 
+{
+ if(b[i] == '1')
+  {
+   value = value + 1 * k;
+  }
+ k = k * 2;
+}
   
-  value = value + (b[i]-48);
-   
-   n = strlen (b);
-  
-  return *b;
+return value;
 }
 
 #define USAGE "m004 <string>\n"
