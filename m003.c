@@ -23,12 +23,14 @@
 
 int is_prime (int a)
 {
- if (a == 2)
- return 1;
- else if (a%2==0)
- return 0;
- else return 1;
-}
+  if (a == 2)  
+  return 1;
+  else if (a== 1)
+  return 0;
+  else if (a%2==0)
+  return 0;
+  else return 1;
+} 
 
 #define USAGE "m003 <num>\n"
 
