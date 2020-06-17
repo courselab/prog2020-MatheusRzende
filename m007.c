@@ -34,8 +34,8 @@
 {
  int i, x;
  int value; 
- /*
- value = 0; 
+ 
+/* value = 0; 
 
  while(s[i] != 0)
   {
@@ -68,7 +68,7 @@ value = 0;
   
   for(i=0; i <= x-2 ; i++)
   {
-   if (s[i] != ' ')
+   if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
    
    value = value + 1;
      
