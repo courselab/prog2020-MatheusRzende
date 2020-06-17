@@ -29,8 +29,8 @@
 
 int decimal (char *b)
 {
-int i, n, value;
-int k;
+int i, n, k;
+int value;
 value = 0; k = 1;
 n = strlen (b);
 
