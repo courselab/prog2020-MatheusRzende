@@ -33,6 +33,7 @@ int day_of_week (int day, int month)
   int n, i;
   int v[12];
   int x;
+  
   n=0;
 
   v[1]=31;  v[2]=29;  v[3]=31;  v[4]=30;  v[5]=31;  v[6]= 30;
