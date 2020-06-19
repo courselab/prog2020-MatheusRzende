@@ -30,7 +30,7 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  int n, i;
+  int n, i=0;
   int v[12];
   int x;
   
@@ -39,12 +39,24 @@ int day_of_week (int day, int month)
   v[1]=31;  v[2]=29;  v[3]=31;  v[4]=30;  v[5]=31;  v[6]= 30;
   v[7]=31;  v[8]=31;  v[9]=30;  v[10]=31;  v[11]=30; v[12]=31;
   
-  for(i=0; i<month; i++) 
+ while(i<month)
+ {
+   {
+    n += v[i]; 
+   }
+  i++;
+ }
+ 
+ 
+ x = day + n;
+ 
+ 
+ /* for(i=0; i<month; i++) 
   {
    n = v[i] + n ;
   }
    
-  x = day + n;
+  x = day + n;*/
 
   if (x%7 == 0) 
   return tue;
