@@ -35,34 +35,7 @@
  int i, x;
  int value; 
  
-/* value = 0; 
-
- while(s[i] != 0)
-  {
- if  (s[i] != ' ')
-   
-   value = value + 1;
-   
-   i++;
-  }
-    return value;
-}
- */
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
-value = 0;
+ value = 0;
 
   x = strlen(s);
   
