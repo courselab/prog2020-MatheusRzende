@@ -49,6 +49,35 @@ int day_of_week (int day, int month)
   
   x = day + n;
  
+ switch(x%7)
+ {
+   case 0:
+    return tue;
+    break;
+   case 1:
+     return wed;
+     break;
+   case 2:
+     return thu;
+     break;
+   case 3:
+     return fri;
+     break;
+   case 4:
+     return sat;
+     break;
+   case 5:
+     return sun;
+     break;
+   case 6:
+     return mon;
+     break;
+   default:
+   return 0;
+   break;
+ }
+}
+
   /*Tambem tentei fazer assim, mas o autograding nao aceitou nenhum 
 
   for(i=0; i<month; i++) 
@@ -58,6 +87,7 @@ int day_of_week (int day, int month)
    
   x = day + n;*/
 
+ /* 
   if (x%7 == 0) 
   return tue;
 
@@ -77,7 +107,7 @@ int day_of_week (int day, int month)
   return sun;
 
   if (x%7 == 6) 
-  return mon;
+  return mon; /*
 }
 
 /* Do not edit function main. */
