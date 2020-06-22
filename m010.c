@@ -36,24 +36,24 @@ int day_of_week (int day, int month)
   
   n=0;
 
-  v[1]=31;  v[2]=29;  v[3]=31;  v[4]=30;  v[5]=31;  v[6]= 30;
-  v[7]=31;  v[8]=31;  v[9]=30;  v[10]=31;  v[11]=30; v[12]=31;
+  v[0]=31;  v[1]=29;  v[2]=31;  v[3]=30;  v[4]=31;  v[5]= 30;
+  v[6]=31;  v[7]=31;  v[8]=30;  v[9]=31;  v[10]=30; v[11]=31;
   
- while(i<month)
- {
-   {
-    n += v[i]; 
-   }
-  i++;
- }
- 
- 
- x = day + n;
- 
- 
- /* for(i=0; i<month; i++) 
+  while(i<month-1)
   {
-   n = v[i] + n ;
+    {
+     n += v[i]; 
+    }
+   i++;
+  }
+  
+  x = day + n;
+ 
+  /*Tambem tentei fazer assim, mas o autograding nao aceitou nenhum 
+
+  for(i=0; i<month; i++) 
+  {
+   n = v[i] + n ;     
   }
    
   x = day + n;*/

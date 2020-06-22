@@ -24,7 +24,32 @@
 /* Sort the first 'n' integers values in 'vector'. */
 
 void sort (int* vector, int n)
+{  
+int i,j;
+int ; 
+
+for (i = 0; i < aLength-1; i++)
 {
+    int jMin = i;
+    
+    for (j = i+1; j < aLength; j++)
+    {
+        /* if this element is less, then it is the new minimum */
+        if (a[j] < a[jMin])
+        {
+      
+            jMin = j;
+        }
+    }
+
+    if (jMin != i) 
+    {
+        swap(a[i], a[jMin]);
+    }
+}
+
+
+
 }
 
 #define USAGE "m009 <num1> <nun2> ... \n"
