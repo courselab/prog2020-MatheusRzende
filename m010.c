@@ -32,10 +32,10 @@ int day_of_week (int day, int month)
 {
   int n, i=0;
   int v[12];
-  int x;
+  int x=0;
   
   n=0;
-
+  
   v[0]=31;  v[1]=29;  v[2]=31;  v[3]=30;  v[4]=31;  v[5]= 30;
   v[6]=31;  v[7]=31;  v[8]=30;  v[9]=31;  v[10]=30; v[11]=31;
   
@@ -76,38 +76,6 @@ int day_of_week (int day, int month)
    return 0;
    break;
  }
-}
-
-  /*Tambem tentei fazer assim, mas o autograding nao aceitou nenhum 
-
-  for(i=0; i<month; i++) 
-  {
-   n = v[i] + n ;     
-  }
-   
-  x = day + n;*/
-
- /* 
-  if (x%7 == 0) 
-  return tue;
-
-  if (x%7 == 1) 
-  return wed;
-
-  if (x%7 == 2) 
-  return thu;
-
-  if (x%7 == 3) 
-  return fri;
-
-  if (x%7 == 4) 
-  return sat;
-
-  if (x%7 == 5) 
-  return sun;
-
-  if (x%7 == 6) 
-  return mon; /*
 }
 
 /* Do not edit function main. */
