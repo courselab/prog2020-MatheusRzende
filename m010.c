@@ -49,33 +49,27 @@ int day_of_week (int day, int month)
   
   x = day + n;
  
- switch(x%7)
- {
-   case 0:
-    return tue;
-    break;
-   case 1:
-     return wed;
-     break;
-   case 2:
-     return thu;
-     break;
-   case 3:
-     return fri;
-     break;
-   case 4:
-     return sat;
-     break;
-   case 5:
-     return sun;
-     break;
-   case 6:
-     return mon;
-     break;
-   default:
-   return 0;
-   break;
- }
+ if (x%7 == 0) 
+ return tue; 
+ 
+ if (x%7 == 1) 
+ return wed; 
+
+ if (x%7 == 2)
+  return thu; 
+ 
+ if (x%7 == 3) 
+ return fri; 
+ 
+ if (x%7 == 4) 
+ return sat; 
+ 
+ if (x%7 == 5) 
+ return sun; 
+ 
+ if (x%7 == 6) 
+ return mon; 
+ 
 }
 
 /* Do not edit function main. */
