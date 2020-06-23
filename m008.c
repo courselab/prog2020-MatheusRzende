@@ -31,9 +31,7 @@
 
 void lastname (char *s)
 {
-int i, x , v , n, k;
-n = 0;
-k = 0;
+int i, x , v , n = 0, k =0;
 char t[256];
 strcpy(t, s);
 
@@ -68,7 +66,7 @@ n++;
 
 i = 0;
 
-for(i=n; i!=v+1; i++)
+for(i=n; i!=v; i++)
  {
  s[i] = t[k];
  k++;  
