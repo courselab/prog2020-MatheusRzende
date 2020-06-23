@@ -31,7 +31,9 @@
 
 void lastname (char *s)
 {
-int i, x , v , n=0 , k=0;
+int i, x , v , n, k;
+n = 0;
+k = 0;
 char t[256];
 strcpy(t, s);
 
