@@ -31,22 +31,48 @@
 
 void lastname (char *s)
 {
-  int t[];
-  int i, x;
+int i, x , v , n=0 , k=0;
+char t[256];
+strcpy(t, s);
 
- strcpy(t, s);
+ v = strlen(t)-1;
 
- for (i=0; t[i]=0; i++)
+ for (i=v; t[i]!=32; i--)
  {
- if (t[i]==' ')
-  {
-   x = i;
-  }
+
  }
 
+x = i + 1;
+i = 0;
 
+for(i=x; i!=v; i++)
+{
+s[n] = t[i];
+n++;
+}
+ 
+for(i=0; i<=n-1; i++)
+{
+  if(s[i] >= 'a' && s[i] <= 'z')
+  {
+    s[i] = s[i] - 32;
+  }  
 }
 
+s[n] = ',';
+n++;
+s[n] = ' ';
+n++;
+
+i = 0;
+
+for(i=n; i!=v; i++)
+ {
+ s[i] = t[k];
+ k++;  
+ }
+
+}
 
 
 /* Do not edit this function. */
