@@ -36,20 +36,19 @@ int wordcount (char *filename)
  enum{word, blank};
 
  fp = fopen(filename, "r");
-  n = fgetc(fp);
 
-while(n != EOF) 
+while((n = fgetc(fp)) != EOF) 
 {
- if((status == 0 && n == 32) || (status == 0 && n == '\n'))
+ if((status == word && n == 32) || (status == word && n == '\n'))
  {
   wrc = wrc + 1;
-  status = 1;
+  status = blank;
  }
  else 
  {
-   if(status = 1 && n != 32) 
+   if(status == blank && n != 32) 
    { 
-   status = 0;
+   status = word;
    }
  }
 }
