@@ -66,7 +66,7 @@ n++;
 
 i = 0;
 
-for(i=n; i!=v; i++)
+for(i=n; i!=v+1; i++)
  {
  s[i] = t[k];
  k++;  
